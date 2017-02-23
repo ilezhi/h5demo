@@ -1,0 +1,172 @@
+/********** reset start **********/
+body,
+p,
+ul,
+ol,
+li,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+li {
+  list-style: none;
+}
+
+/* reset end */
+
+/********** common start **********/
+.hide {
+  display: none !important;
+}
+
+.full-box-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.abo-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.text-blue {
+  color: #0e84d7 !important;
+}
+
+.arrow-ico {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 3px solid rgb(255, 204, 0);
+  border-right: 3px solid rgb(255, 204, 0);
+  display:block;
+}
+
+.arrow-ico.down {
+  transform: rotate(135deg);
+}
+
+.arrow-ico.up {
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0.3125rem;
+}
+
+/*common end*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #f0f0f0;
+  overflow-x: hidden;
+  color: #1a1a1a;
+  min-width: 20rem;
+}
+
+/*顶部广告*/
+.banner-wrap {
+  width: auto;
+  height: 4rem;
+}
+
+.banner-wrap a {
+  display: block;
+  position: relative;
+}
+
+mark.ad-text {
+  position: absolute;
+  right: 0.625rem;
+  bottom: 0.625rem;
+  color: #fff;
+  background-color: rgba(0,0,0,0.18);
+  font-size: 0.625rem;
+}
+
+/*优惠券*/
+.coupon-wrap {
+  position: relative;
+  border-bottom: 1px solid #d9dadc;
+}
+
+.coupon {
+  position: relative;
+}
+.coupon a {
+  display: block;
+  height: 14.625rem;
+}
+
+.coupon-text {
+  position: relative;
+  background: #eef8ff;
+  font-size: 1.0625rem;
+  line-height: 2.25rem;
+  padding: 0 0.5rem;
+}
+
+.arrow-wrap {
+  width: 1.5625rem;
+  height: 1.625rem;
+  display: inline-block;
+  padding: 0.625rem 0 0 0.9375rem;
+}
+
+.extra-wrap {
+  height: 3.125rem;
+  line-height: 3.125rem;
+  background: #129bf0;
+  padding: 0 0.625rem;
+}
+
+.mobile-logl {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.toggle-wrap {
+  width: 7.875rem;
+  height: 1.25rem;
+  border: 1px solid #0482da;
+  border-radius: 3px;
+  margin: 0.875rem 0 0 0.625rem;
+  line-height: 1.5;
+}
+
+.toggle-wrap a {
+  float:left;
+}
+
+a.toggle {
+  width: 3.875rem;
+  height: 1.25rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #024a78;
+}
+
+a.toggle.active {
+  color: #fff;
+  background: #0482da;
+}
+
+ul.ico-list li {
+  float: left;
+  padding: 0 0.5rem;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "h5demo",
+  "version": "1.0.0",
+  "description": "手机新浪网是一个很好的例子,通过重写告诉你移动页面就是这么简单.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
