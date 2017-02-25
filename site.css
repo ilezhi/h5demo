@@ -10,6 +10,10 @@ h1,h2,h3,h4,h5,h6 {
   padding: 0;
 }
 
+img {
+  border: 0;
+}
+
 a {
   text-decoration: none;
   color: #1a1a1a;
@@ -59,12 +63,26 @@ li {
 
 .btn-collapse.down {
   transform: rotate(135deg);
+  position: relative;
+  top: -0.125rem;
 }
 
 .btn-collapse.up {
   transform: rotate(-45deg);
   position: relative;
   top: 0.3125rem;
+}
+
+.blue {
+  color: #129bf0;
+}
+
+.clearfix:after {
+  content: '';
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
 }
 
 /*common end*/
@@ -146,6 +164,10 @@ nav.menu a {
   line-height: 2rem;
 }
 
+.carousel {
+  margin: 0 0 0.5rem;
+}
+
 .carousel-inner {
   position: relative;
   width: 100%;
@@ -169,7 +191,8 @@ nav.menu a {
 /*新闻列表*/
 .news-list-wrap {
   background: #fff;
-  padding: 0 0.625rem;
+  /*padding: 0 0.625rem;*/
+  margin: 0 0 0.5rem;
 }
 
 .news-list-wrap .title {
@@ -177,11 +200,13 @@ nav.menu a {
   line-height: 2.5rem;
   position: relative;
   color: #129bf0;
+  margin: 0 0.625rem;
 }
 
 .news-list-wrap .title h4 {
   font-size: 1.25rem;
   font-weight: 600;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .news-list-wrap .title h4:before {
@@ -195,6 +220,25 @@ nav.menu a {
   background: #129bf0;
 }
 
+.news-list-wrap .news-inner {
+  padding: 0 0.625rem;
+}
+
+.news-list-wrap .news-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.news-link li {
+  float: left;
+  margin-left: 1.375rem;
+}
+
+.news-link li a {
+  color: #129bf0;
+}
+
 .tab-num {
   position: absolute;
   right: 0;
@@ -205,4 +249,149 @@ nav.menu a {
 
 .tab-num .num {
   font-size: 1rem;
+}
+
+.news-list li {
+  padding: 0.625rem 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.news-list li a {
+  display: flex;
+}
+
+.news-list li .cont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-list li .img-title {
+  margin: 0 0.75rem 0 0;
+  width: 5.625rem;
+  height: 4.1875rem;
+  overflow: hidden;
+}
+
+.news-list li .img-title img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.news-list li h4 {
+  line-height: 1.5625rem;
+  max-height: 3.125rem;
+  overflow: hidden;
+  font-weight: normal;
+  font-size: 1.0625rem;
+}
+
+.news-list li .comt-wrap {
+  height: 1rem;
+}
+
+.news-list li .comt-wrap span {
+  float: right;
+  font-size: 0.625rem;
+}
+
+.news-bottom-btn {
+  height: 2.1875rem;
+  text-align: center;
+  line-height: 2.1875rem;
+}
+
+.news-bottom-btn i {
+  display: inline-block;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: #dfdfdf;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: 9rem;
+}
+
+.news-bottom-btn i.active {
+  background: #129bf0;
+  width: 0.375rem;
+  height: 0.375rem;
+}
+
+.news-bottom-btn a {
+  color: #129bf0;
+  margin: 0 0.3125rem 0 0;
+}
+
+.news-bottom-btn span {
+  border-color: #129bf0;
+}
+
+.pic-carousel {
+  padding: 0.625rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.pic-inner {
+  width: 100rem;
+}
+
+.pic-inner .pic-list {
+  width: 24.625rem;
+  display: box;
+  display: -webkit-box;
+}
+
+.pic-list li {
+  width: 50%;
+}
+
+.pic-inner .item {
+  float: left;
+  position: relative;
+  margin: 0 0.25rem 0 0;
+}
+
+.pic-inner .item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pic-inner .item .desc {
+  position: absolute;
+  left: 0.625rem;
+  bottom: 0.625rem;
+  color: #fff;
+  font-size: 1rem;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,.0) 0,rgba(0,0,0,.6) 100%);
+}
+
+.match-list-wrap {
+  padding: 0.625rem 0;
+}
+
+.match-list-wrap li {
+  float: left;
+  width: 20%;
+}
+
+.match-list-wrap li strong {
+  font-weight: normal;
+  color: #888;
+  font-size: 0.625rem;
+}
+
+.match-list-wrap a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.match-list-wrap img {
+  width: 2.5rem;
+  height: 2.5rem;
 }
