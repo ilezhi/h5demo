@@ -9,39 +9,79 @@
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <div class="banner-wrap">
-    <a href="">
-      <img class="full-box-img" src="https://d7.sinaimg.cn/pfpghc2/201702/17/f5090c7fb40a4794949b090475d4dc39.jpg" alt="">
-      <mark class="ad-text">广告</mark>
+
+  <!-- 状态栏 -->
+  <header class="status-bar">
+    <a class="logo" href="">
+      <img src="#" alt="">
     </a>
-  </div>
-  <div id="couponWrap" class="coupon-wrap">
-    <div class="coupon hide">
-      <a href="">
-        <img class="full-box-img" src="https://d1.sinaimg.cn/201702/22/1446518_2.23wapqp-320x180.png" alt="">
-      </a>
-      <mark class="ad-text">广告</mark>
+    <div class="toggle-version">
+      <a class="active" href="">触屏版</a>
+      <a href="">极速版</a>
     </div>
-    <div class="coupon-text">
-      <a class="text-blue" href="">点击领取800元优惠券</a>
-      <div class="abo-right arrow-wrap">
-        <span class="arrow-ico down"></span>
+    <ul class="icon-group">
+      <li><a href=""><img src="#" alt=""></a></li>
+      <li><a href=""><img src="#" alt=""></a></li>
+      <li><a href=""><img src="#" alt=""></a></li>
+    </ul>
+  </header>
+
+  <!-- 导航 -->
+  <nav class="menu">
+    <a href="#">新闻</a>
+    <a href="">财经</a>
+    <a href="">体育</a>
+    <a href="">娱乐</a>
+    <a href="">军事</a>
+    <a href="">视频</a>
+    <a href="">博客</a>
+    <a href="">科技</a>
+    <a href="">NBA</a>
+    <a href="">汽车</a>
+    <a href="">房产</a>
+    <a href="">微博</a>
+    <a href="">股票</a>
+    <a href="">教育</a>
+    <a href="">图片</a>
+    <a href="collapse-wrap">
+      <i class="btn-collapse down"></i>
+    </a>
+  </nav>
+
+  <!-- 幻灯片 -->
+  <div class="carousel slide">
+    <div class="carousel-indicators">
+
+    </div>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM1NTUvdGV4dDpGaXJzdCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1YTcyZmQ2YTg5IHRleHQgeyBmaWxsOiM1NTU7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NDVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTVhNzJmZDZhODkiPjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjNzc3Ii8+PGc+PHRleHQgeD0iMzA4LjI5Njg3NSIgeT0iMjcwLjEiPkZpcnN0IHNsaWRlPC90ZXh0PjwvZz48L2c+PC9zdmc+" alt="">
+      </div>
+      <div class="item">
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNjY2OiM0NDQvdGV4dDpTZWNvbmQgc2xpZGUKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3MmZkOTJjZiB0ZXh0IHsgZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTcyZmQ5MmNmIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjxnPjx0ZXh0IHg9IjI2NC45NTMxMjUiIHk9IjI3MC4xIj5TZWNvbmQgc2xpZGU8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
       </div>
     </div>
   </div>
-  <header class="extra-wrap">
-    <a class="mobile-logo float-left" href="" title="手机新浪网">
-      <img src="#" alt="">
-    </a>
-    <div class="toggle-wrap float-left">
-      <a class="toggle touch active" href="">触屏版</a>
-      <a class="toggle faster" href="">极速版</a>
+
+  <!-- 今日要闻 -->
+  <div class="news-list-wrap">
+    <section>
+      <div class="title">
+        <h4>今日要闻</h4>
+        <div class="tab-num"><span class="num">1</span>/2</div>
+      </div>
+      <div class="news-list">
+        <ul>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <div class="news-bottom-btn">
+
     </div>
-    <ul class="float-right ico-list">
-      <li><a class="cloud-ico" href=""><img src="#" alt=""></a></li>
-      <li><a class="user-ico" href=""><img src="#" alt=""></a></li>
-      <li><a class="menu-ico" href=""><img src="#" alt=""></a></li>
-    </ul>
-  </header>
+  </div>
 </body>
 </html>

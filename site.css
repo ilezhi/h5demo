@@ -4,7 +4,8 @@ p,
 ul,
 ol,
 li,
-img {
+img,
+h1,h2,h3,h4,h5,h6 {
   margin: 0;
   padding: 0;
 }
@@ -48,19 +49,19 @@ li {
   color: #0e84d7 !important;
 }
 
-.arrow-ico {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-top: 3px solid rgb(255, 204, 0);
-  border-right: 3px solid rgb(255, 204, 0);
-  display:block;
+.btn-collapse {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-top: 2px solid #aaa;
+  border-right: 2px solid #aaa;
+  display:inline-block;
 }
 
-.arrow-ico.down {
+.btn-collapse.down {
   transform: rotate(135deg);
 }
 
-.arrow-ico.up {
+.btn-collapse.up {
   transform: rotate(-45deg);
   position: relative;
   top: 0.3125rem;
@@ -70,6 +71,7 @@ li {
 
 html {
   font-size: 16px;
+  font-family: Microsoft YaHei,Helvetica Neue,Helvetica,Roboto,STHeiTi,Arial,sans-serif;
 }
 
 body {
@@ -79,94 +81,128 @@ body {
   min-width: 20rem;
 }
 
-/*顶部广告*/
-.banner-wrap {
-  width: auto;
-  height: 4rem;
-}
-
-.banner-wrap a {
-  display: block;
-  position: relative;
-}
-
-mark.ad-text {
-  position: absolute;
-  right: 0.625rem;
-  bottom: 0.625rem;
-  color: #fff;
-  background-color: rgba(0,0,0,0.18);
-  font-size: 0.625rem;
-}
-
-/*优惠券*/
-.coupon-wrap {
-  position: relative;
-  border-bottom: 1px solid #d9dadc;
-}
-
-.coupon {
-  position: relative;
-}
-.coupon a {
-  display: block;
-  height: 14.625rem;
-}
-
-.coupon-text {
-  position: relative;
-  background: #eef8ff;
-  font-size: 1.0625rem;
-  line-height: 2.25rem;
-  padding: 0 0.5rem;
-}
-
-.arrow-wrap {
-  width: 1.5625rem;
-  height: 1.625rem;
-  display: inline-block;
-  padding: 0.625rem 0 0 0.9375rem;
-}
-
-.extra-wrap {
+/*顶部状态栏*/
+.status-bar {
   height: 3.125rem;
-  line-height: 3.125rem;
-  background: #129bf0;
   padding: 0 0.625rem;
+  background: #129bf0;
 }
 
-.mobile-logl {
+a.logo {
+  float: left;
   width: 2.5rem;
   height: 2.5rem;
+  margin: 0.3125rem 0 0;
+}
+a.logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.toggle-wrap {
+.toggle-version {
   width: 7.875rem;
-  height: 1.25rem;
+  height: 1.375rem;
   border: 1px solid #0482da;
-  border-radius: 3px;
   margin: 0.875rem 0 0 0.625rem;
-  line-height: 1.5;
+  float: left;
+  display: flex;
 }
 
-.toggle-wrap a {
-  float:left;
-}
-
-a.toggle {
-  width: 3.875rem;
-  height: 1.25rem;
-  font-size: 0.875rem;
+.toggle-version a {
+  flex: 1;
   text-align: center;
+  line-height: 1.5;
+  font-size: 0.875rem;
   color: #024a78;
 }
 
-a.toggle.active {
+.toggle-version a.active {
   color: #fff;
   background: #0482da;
 }
 
-ul.ico-list li {
+.icon-group {
+  float: right;
+}
+.icon-group li {
+  padding: 0.875rem 0 0 1rem;
   float: left;
-  padding: 0 0.5rem;
+}
+
+nav.menu {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5d5e5;
+}
+
+nav.menu a {
+  display: block;
+  width: 16.6%;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner .item {
+  display: none;
+}
+
+.carousel-inner .item.active {
+  display: block;
+}
+
+.carousel-inner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*新闻列表*/
+.news-list-wrap {
+  background: #fff;
+  padding: 0 0.625rem;
+}
+
+.news-list-wrap .title {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  position: relative;
+  color: #129bf0;
+}
+
+.news-list-wrap .title h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.news-list-wrap .title h4:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -0.625rem;
+  top: 0.625rem;
+  width: 0.125rem;
+  height: 1.25rem;
+  background: #129bf0;
+}
+
+.tab-num {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.625rem;
+  letter-spacing: 0.125rem;
+}
+
+.tab-num .num {
+  font-size: 1rem;
 }
