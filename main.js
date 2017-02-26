@@ -97,4 +97,16 @@ $(function () {
     });
   });
 
+  var myFeedNews = new Swiper('#newsFeedSwiper', {
+    freeMode: true,
+    slidesPerView: 2.5,
+    offsetSlidesAfter : 2.5
+  });
+
+  var sportsNews = new Swiper('#sportsSwiper', {
+    freeMode: true,
+    slidesPerView: 2.5,
+    offsetSlidesAfter : 2.5
+  });
+
 });

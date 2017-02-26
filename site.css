@@ -364,11 +364,11 @@ nav.menu a {
 
 
 .pic-inner {
-  width: 100rem;
+  /*width: 100rem;*/
 }
 
 .pic-inner .pic-list {
-  width: 24.625rem;
+  /*width: 24.625rem;*/
   display: box;
   display: -webkit-box;
 }
@@ -378,7 +378,7 @@ nav.menu a {
 }
 
 .pic-inner .item {
-  float: left;
+  display: block
   position: relative;
   margin: 0 0.25rem 0 0;
 }
@@ -422,4 +422,30 @@ nav.menu a {
 .match-list-wrap img {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.footer {
+  background: #129bf0;
+  padding: 0.875rem 0 1.25rem;
+  text-align: center;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer .extra-link {
+  line-height: 2.2;
+  margin: 0 0 0.25rem;
+}
+.footer .extra-link a {
+  margin: 0 1.25rem;
+  font-size: 1rem;
+}
+
+.footer,
+.footer a {
+  font-size: 0.625rem;
+  line-height: 1.5;
 }
