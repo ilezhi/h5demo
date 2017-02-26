@@ -52,4 +52,49 @@ $(function () {
     }
   });
 
+  if (!String.prototype.supplant) {
+    String.prototype.supplant = function (o) {
+        return this.replace(/{([^{}]*)}/g,
+            function (a, b) {
+                var r = o[b];
+                return typeof r === 'string' || typeof r === 'number' ? r : a;
+            }
+        );
+    };
+  }
+
+  var template = ['<li>',
+                    '<a href="{linkTo}">',
+                      '<aside class="img-title">',
+                        '<img src="{pic}" />',
+                      '</aside>',
+                      '<div class="cont">',
+                        '<h4>{title}</h4>',
+                        '<div class="comt-wrap">',
+                          '<span>{comt}<i></i></span>',
+                        '</div>',
+                      '</div>',
+                    '</a>',
+                  '</li>'].join('');
+
+  // 点击展开更多
+  $('#newsMore').on('click', function() {
+    var isLoading = $(this).data('isLoading');
+
+    if (isLoading) {
+      return;
+    }
+
+    $(this).data('isLoading', true);
+    var that = this;
+    $.get('/data/news.json', function (data) {
+      var elStr = data.map(function (row) {
+        return template.supplant(row);
+      });
+
+      $('#newsList').append(elStr);
+      $(that).data('isLoading', false);
+    });
+  });
+
 });
