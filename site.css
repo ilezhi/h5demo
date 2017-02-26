@@ -177,15 +177,15 @@ nav.menu a {
   line-height: 3.125rem;
 }
 
-.swiper-slide a {
+#picSwiper .swiper-slide a {
   display: block;
 }
 
-.swiper-slide img {
+#picSwiper .swiper-slide img {
   width: 100%;
 }
 
-.swiper-slide a span {
+#picSwiper .swiper-slide a span {
   display: block;
   width: 100%;
   position: absolute;
@@ -211,6 +211,18 @@ nav.menu a {
   margin: 0 0 0.5rem;
 }
 
+#newsSwiper {
+  box-sizing: border-box;
+}
+
+#newsSwiper .swiper-slide {
+  padding: 0 0.625rem;
+  box-sizing: border-box;
+}
+
+.news-list-wrap #newsSwiper .news-inner {
+  padding: 0;
+}
 .news-list-wrap .title {
   height: 2.5rem;
   line-height: 2.5rem;

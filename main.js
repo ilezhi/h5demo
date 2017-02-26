@@ -27,7 +27,7 @@ $(function () {
   });
 
   // 顶部轮播图
-  var mySwiper = new Swiper('.swiper-container', {
+  var mySwiper = new Swiper('#picSwiper', {
     loop: true,
     autoplay: 3000,
     initialSlide: 1,
@@ -43,4 +43,13 @@ $(function () {
       $('#indicators').find('.curNum').text(cur);
     }
   });
+
+  var myNewsSwiper = new Swiper('#newsSwiper', {
+    onSlideChangeEnd: function (swiper) {
+      var cur = swiper.realIndex + 1;
+      $('#mainNews').find('.tab-num .num').text(cur);
+      $('#mainNews').find('.news-bottom-btn .circle').removeClass('active').eq(cur - 1).addClass('active');
+    }
+  });
+
 });

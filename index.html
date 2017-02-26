@@ -52,7 +52,7 @@
   <!-- 幻灯片 -->
   <div class="carousel">
     <div id="indicators" class="indicators"><span class="curNum">1</span>/<span class="total">3</span></div>
-    <div class="swiper-container">
+    <div id="picSwiper" class="swiper-container">
       <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="">
@@ -84,14 +84,15 @@
 
 
   <!-- 今日要闻 -->
-  <div class="news-list-wrap">
+  <div id="mainNews" class="news-list-wrap">
     <section>
       <div class="title">
         <h4>今日要闻</h4>
         <div class="tab-num"><span class="num">1</span>/2</div>
       </div>
-      <div class="news-inner">
-        <ul class="news-list">
+      <div id="newsSwiper" class="swiper-container">
+      <div class="news-inner swiper-wrapper">
+        <ul class="news-list swiper-slide">
           <li>
             <a href="">
               <aside class="img-title"><img src="https://ks.sinaimg.cn/n/default/transform/20170225/WcYH-fyavvsk3400995.jpg/w120h90z1l50t1bdd.jpg" alt=""></aside>
@@ -136,9 +137,52 @@
           </a>
         </li>
         </ul>
-        <ul>
-          <li></li>
+        <ul class="news-list swiper-slide">
+          <li>
+            <a href="">
+              <aside class="img-title"><img src="https://ks.sinaimg.cn/n/default/transform/20170225/WcYH-fyavvsk3400995.jpg/w120h90z1l50t1bdd.jpg" alt=""></aside>
+              <div class="cont">
+                <h4>北京小学学区房15万1平扔抢手 地下室每平超12万</h4>
+                <div class="comt-wrap">
+                  <span>6万<i></i></span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <aside class="img-title"><img src="https://ks.sinaimg.cn/n/default/transform/20170225/WcYH-fyavvsk3400995.jpg/w120h90z1l50t1bdd.jpg" alt=""></aside>
+              <div class="cont">
+                <h4>北京小学学区房15万1平扔抢手 地下室每平超12万</h4>
+                <div class="comt-wrap">
+                  <span>6万<i></i></span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <aside class="img-title"><img src="https://ks.sinaimg.cn/n/default/transform/20170225/WcYH-fyavvsk3400995.jpg/w120h90z1l50t1bdd.jpg" alt=""></aside>
+              <div class="cont">
+                <h4>北京小学学区房15万1平扔抢手 地下室每平超12万</h4>
+                <div class="comt-wrap">
+                  <span>6万<i></i></span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li><a href="">
+            <aside class="img-title"><img src="https://ks.sinaimg.cn/n/default/transform/20170225/WcYH-fyavvsk3400995.jpg/w120h90z1l50t1bdd.jpg" alt=""></aside>
+            <div class="cont">
+              <h4>北京小学学区房15万1平扔抢手 地下室每平超12万</h4>
+              <div class="comt-wrap">
+                <span>6万<i></i></span>
+              </div>
+            </div>
+          </a>
+        </li>
         </ul>
+      </div>
       </div>
     </section>
     <div class="news-bottom-btn">
